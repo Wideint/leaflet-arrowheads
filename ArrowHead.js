@@ -507,6 +507,14 @@ export var ArrowHead = L.ArrowHead = L.Polyline.extend({
     },
 });
 
+L.arrowhead = function (latlngs, options) {
+    return new L.ArrowHead(latlngs, options);
+};
+
+export function arrowhead(latlngs, options) {
+  return new ArrowHead(latlngs, options);
+}
+
 L.LayerGroup.include({
 	removeLayer: function (layer) {
 		var id = layer in this._layers ? layer : this.getLayerId(layer);
