@@ -193,12 +193,9 @@ function pixelsToMeters(pixels, map) {
 }
 
 export var ArrowHead = L.ArrowHead = L.Polyline.extend({
-    /**
-     * Adds arrowheads to an L.polyline
-     * @param {object} options The options for the arrowhead.  See documentation for details
-     * @returns The L.polyline instance that they arrowheads are attached to
-     */
-    arrowheads: function (options = {}) {
+    initialize: function (latlngs, options = {}) {
+		this._setLatLngs(latlngs);
+
         // Merge user input options with default options:
         const defaults = {
             yawn: 60,
