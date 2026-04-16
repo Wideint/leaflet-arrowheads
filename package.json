@@ -2,7 +2,7 @@
 	"name": "leaflet-arrowheads",
 	"version": "1.4.0",
 	"description": "Add arrow heads to leaflet polylines",
-	"main": "src/index.js",
+	"main": "ArrowHead.js",
 	"scripts": {
 		"checkoutput": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"use:npmReadme": "mv 'README.md' 'git.README.md' && mv 'npm.README.md' 'README.md'",
