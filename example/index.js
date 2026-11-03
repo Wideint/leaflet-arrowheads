@@ -25,7 +25,7 @@ const boatIcon = new Icon({
 let group1Offsetx = 0.4,
 	group1Offsety = 0.55;
 
-const simpleVector0 = new Arrow(
+const simpleVector0 = arrow(
         [
             [
                 map.getCenter().lat - 0.05 + group1Offsetx,
@@ -38,7 +38,6 @@ const simpleVector0 = new Arrow(
         ],
         { color: 'black' }
     )
-	.arrowheads()
 	.bindPopup(`<pre><code>new Arrow(coords).arrowheads()</code></pre>`, {
 		maxWidth: 2000,
 		minWidth: 400,

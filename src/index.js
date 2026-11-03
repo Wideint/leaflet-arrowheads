@@ -542,7 +542,8 @@ LayerGroup.include({
 });
 
 let arrow = function(latlngs, options) {
-    return new Arrow(latlngs, options).arrowheads({size: "15px", frequency: "endonly", fill: true, yawn: 60});
+    //return new Arrow(latlngs, options).arrowheads({size: "15px", frequency: "endonly", fill: true, yawn: 60});
+    return new Arrow(latlngs, options).arrowheads({});
 }
 
 Map.include({
