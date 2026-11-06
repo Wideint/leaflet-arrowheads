@@ -43,7 +43,7 @@ function destination(latlng, heading, distance) {
                     cosLat1, cosDistR - sinLat1 * Math.sin(lat2));
     lon2 = lon2 * radInv;
     lon2 = lon2 > 180 ? lon2 - 360 : lon2 < -180 ? lon2 + 360 : lon2;
-    return new LatLng([lat2 * radInv, lon2]);
+    return new LatLng(lat2 * radInv, lon2);
 }
 
 export {angle, destination};

@@ -14,5 +14,6 @@ cat src/geometryutil.js	src/index.js \
 	| sed 's/new Polyline/L.polyline/g' \
 	| sed 's/new Polygone/L.polygone/g' \
 	| sed 's/new LayerGroup/new L.layerGroup/g' \
+	| sed 's/new LatLng/new L.latLng/g' \
 	| sed 's/^Point/L.Point/g' \
 	> dist/leafletv1-arrowheads.js
