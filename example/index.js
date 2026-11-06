@@ -1,5 +1,5 @@
 import { Map, TileLayer, Icon, LayerGroup, Marker, Control } from 'leaflet';
-import { arrow, Arrow } from '../src';
+import { arrow, Arrow } from '/dist/leaflet-arrowheads.js';
 
 const map = new Map('mapID').setView([32.02556114475524, -119.78169059753418], 9);
 

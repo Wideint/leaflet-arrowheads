@@ -1,10 +1,4 @@
-import {
-    LayerGroup,
-    Map,
-    Polygon,
-    Polyline,
-    Util,
-} from 'leaflet';
+import { LayerGroup, Map, Polygon, Polyline, Util, } from 'leaflet';
 import { angle, destination } from './geometryutil.js';
 
 function modulus(i, n) {
